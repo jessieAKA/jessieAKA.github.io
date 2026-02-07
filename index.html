@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessie Chen - Sales Manager | CARDLO Biotechnology</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#289238',
+                        secondary: '#F5F7FA',
+                        dark: '#2C3E50',
+                        light: '#ECF0F1'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .card-shadow {
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            }
+            .section-padding {
+                padding: clamp(2rem, 5vw, 4rem);
+            }
+            .content-width {
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+            /* 新增：防止联系方式文本换行 */
+            .contact-text-nowrap {
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body class="bg-secondary text-dark font-sans">
+    <!-- Header - Personal Profile -->
+    <header class="bg-white sticky top-0 z-50 card-shadow">
+        <div class="content-width py-4 flex flex-col md:flex-row items-center justify-between gap-6">
+            <!-- Avatar & Personal Info -->
+            <div class="flex items-center gap-4">
+                <div class="w-20 h-20 rounded-full overflow-hidden border-2 border-primary">
+                    <img src="images/profier.jpg" alt="Jessie Chen Avatar" class="w-full h-full object-cover">
+                </div>
+                <div>
+                    <h1 class="text-[clamp(1.25rem,3vw,1.75rem)] font-bold text-primary">Jessie Chen</h1>
+                    <p class="text-gray-600 font-medium">Sales Manager</p>
+                    <div class="flex items-center gap-2 mt-1 text-sm">
+                        <i class="fa fa-map-marker text-primary"></i>
+                        <span>Guangzhou, China</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Quick Contact - 调整按钮宽度和文本不换行 -->
+            <div class="flex flex-row gap-3 text-sm w-full md:w-auto justify-center md:justify-end min-w-[280px] md:min-w-0">
+                <a href="tel:+8618814180074" class="flex items-center gap-2 px-4 py-2 bg-primary/5 hover:bg-primary/10 rounded-lg transition-colors flex-1 justify-center contact-text-nowrap">
+                    <i class="fa fa-phone text-primary"></i>
+                    <span>+86-18814180074</span>
+                </a>
+                <a href="mailto:jessie@cardlo.cn" class="flex items-center gap-2 px-4 py-2 bg-primary/5 hover:bg-primary/10 rounded-lg transition-colors flex-1 justify-center contact-text-nowrap">
+                    <i class="fa fa-envelope text-primary"></i>
+                    <span>jessie@cardlo.cn</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="content-width section-padding py-0">
+        <!-- Company Card & Business Card -->
+        <section class="mb-12 flex flex-col lg:flex-row gap-8">
+            <!-- Business Card -->
+            <div class="lg:w-1/2 card-shadow bg-white rounded-xl overflow-hidden">
+                <h2 class="bg-primary text-white py-3 px-6 font-semibold">My Business Card</h2>
+                <div class="p-6">
+                    <img src="images/business_card.jpg" alt="Jessie Chen Business Card" class="w-full h-auto rounded-lg object-cover">
+                </div>
+            </div>
+
+            <!-- Company Basic Info -->
+            <div class="lg:w-1/2 card-shadow bg-white rounded-xl overflow-hidden">
+                <h2 class="bg-primary text-white py-3 px-6 font-semibold">About CARDLO Biotechnology</h2>
+                <div class="p-6 space-y-6">
+                    <div>
+                        <h3 class="font-bold text-lg mb-2">Guangdong Cardlo Biotechnology Co.,Ltd.</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            A professional and top manufacturer of food emulsifiers and plastic additives, located in Guangzhou, China. We hold a full range of international certificates to ensure product quality and compliance with global standards.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="flex flex-col gap-1">
+                            <span class="font-semibold text-sm text-gray-500">Office Address</span>
+                            <p class="text-sm">Floor 7, North Tower, Ruihua Building, No.267, Wushan Road, Tianhe District, 510635, Guangzhou, China</p>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <span class="font-semibold text-sm text-gray-500">Plant Address</span>
+                            <p class="text-sm">No.6, Huafeng Road, Yonghe District, Economic & Technological Development Zone, 511356, Guangzhou, China</p>
+                        </div>
+                    </div>
+                    <!-- Certificates -->
+                    <div class="pt-2">
+                        <span class="font-semibold text-sm text-gray-500 block mb-2">Certifications</span>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-light rounded-full text-xs">FDA</span>
+                            <span class="px-3 py-1 bg-light rounded-full text-xs">ISO</span>
+                            <span class="px-3 py-1 bg-light rounded-full text-xs">REACH</span>
+                            <span class="px-3 py-1 bg-light rounded-full text-xs">HACCP</span>
+                            <span class="px-3 py-1 bg-light rounded-full text-xs">FSSC22000</span>
+                            <span class="px-3 py-1 bg-light rounded-full text-xs">RoHS</span>
+                            <span class="px-3 py-1 bg-light rounded-full text-xs">KOSHER</span>
+                            <span class="px-3 py-1 bg-light rounded-full text-xs">HALAL</span>
+                            <span class="px-3 py-1 bg-light rounded-full text-xs">RSPO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Catalog -->
+        <section class="mb-12">
+            <h2 class="text-[clamp(1.5rem,3vw,2rem)] font-bold text-center mb-8 text-primary">Our Main Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Food Emulsifiers -->
+                <div class="card-shadow bg-white rounded-xl overflow-hidden">
+                    <div class="bg-primary/10 py-3 px-6">
+                        <h3 class="font-bold text-lg text-primary flex items-center gap-2">
+                            <i class="fa fa-cutlery"></i>Food Emulsifiers (E471, E475)
+                        </h3>
+                    </div>
+                    <ul class="p-6 space-y-3 text-gray-700">
+                        <li class="flex items-center gap-2"><i class="fa fa-check text-primary text-sm"></i>Distilled Monoglycerides E471 (GMS99/ DMG95)</li>
+                        <li class="flex items-center gap-2"><i class="fa fa-check text-primary text-sm"></i>Mono-and diglyceride of fatty acids (GMS40)</li>
+                        <li class="flex items-center gap-2"><i class="fa fa-check text-primary text-sm"></i>Glycerol monostearate</li>
+                        <li class="flex items-center gap-2"><i class="fa fa-check text-primary text-sm"></i>Sorbitan monostearate (SMS, SPAN60)</li>
+                        <li class="flex items-center gap-2"><i class="fa fa-check text-primary text-sm"></i>Glycerol Monolaurate (GML)</li>
+                        <li class="flex items-center gap-2"><i class="fa fa-check text-primary text-sm"></i>Polyglycerol easters of fatty acids E475 (PGE)</li>
+                    </ul>
+                </div>
+
+                <!-- Plastic Additives -->
+                <div class="card-shadow bg-white rounded-xl overflow-hidden">
+                    <div class="bg-primary/10 py-3 px-6">
+                        <h3 class="font-bold text-lg text-primary flex items-center gap-2">
+                            <i class="fa fa-industry"></i>Plastic Additives
+                        </h3>
+                    </div>
+                    <ul class="p-6 space-y-3 text-gray-700">
+                        <li class="flex items-center gap-2"><i class="fa fa-check text-primary text-sm"></i>Glycerin Monostearate (GMS99/DMG95, GMS40)</li>
+                        <li class="flex items-center gap-2"><i class="fa fa-check text-primary text-sm"></i>PVC Lubricant & Antistatic agent</li>
+                        <li class="flex items-center gap-2"><i class="fa fa-check text-primary text-sm"></i>Anti-shrinking agent & EPE FOAM agent</li>
+                        <li class="flex items-center gap-2"><i class="fa fa-check text-primary text-sm"></i>Pentaerythritol Stearate (PETS-4, PETS-3)</li>
+                        <li class="flex items-center gap-2"><i class="fa fa-check text-primary text-sm"></i>Ethylene Bis Stearamide (EBS)</li>
+                        <li class="flex items-center gap-2"><i class="fa fa-check text-primary text-sm"></i>Pentaerythritol Oleate (PETo)</li>
+                        <li class="flex items-center gap-2"><i class="fa fa-check text-primary text-sm"></i>Trimethylolpropane Trioleate (TMPTO)</li>
+                        <li class="flex items-center gap-2"><i class="fa fa-check text-primary text-sm"></i>EBH-502 & Glycerol Tristearate (GTS)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="card-shadow bg-white rounded-xl overflow-hidden">
+            <h2 class="bg-primary text-white py-3 px-6 font-semibold text-center text-lg">Get In Touch With Me</h2>
+            <div class="p-8 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <a href="tel:+8618814180074" class="flex flex-col items-center gap-3 p-4 hover:bg-primary/5 rounded-lg transition-colors">
+                    <i class="fa fa-whatsapp text-3xl text-primary"></i>
+                    <h4 class="font-semibold">Whatsapp / Tel</h4>
+                    <p class="text-sm text-gray-600">+86-18814180074</p>
+                </a>
+                <a href="mailto:jessie@cardlo.cn" class="flex flex-col items-center gap-3 p-4 hover:bg-primary/5 rounded-lg transition-colors">
+                    <i class="fa fa-envelope-o text-3xl text-primary"></i>
+                    <h4 class="font-semibold">E-mail</h4>
+                    <p class="text-sm text-gray-600">jessie@cardlo.cn</p>
+                </a>
+                <a href="http://www.cardlo.cn" target="_blank" class="flex flex-col items-center gap-3 p-4 hover:bg-primary/5 rounded-lg transition-colors">
+                    <i class="fa fa-globe text-3xl text-primary"></i>
+                    <h4 class="font-semibold">Official Website</h4>
+                    <p class="text-sm text-gray-600">www.cardlo.cn</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-6 mt-12">
+        <div class="content-width px-6 text-center text-sm text-gray-300">
+            <p>© 2025 Guangdong Cardlo Biotechnology Co.,Ltd. All Rights Reserved.</p>
+            <p class="mt-2">Manufacturer of Food Emulsifiers & Plastic Additives | Global Certifications</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top - 修复箭头图标 -->
+    <a href="#" class="fixed bottom-8 right-8 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center card-shadow hover:bg-primary/90 transition-colors">
+        <i class="fa fa-arrow-up text-lg"></i>
+    </a>
+</body>
+</html>
